@@ -16,7 +16,7 @@ function f2button() {
 }
 function t3button() {
   document.getElementById("buttonf3").innerHTML = ""
-  document.getElementById("buttont3").innerHTML = "That is incorrect. Climate change means the increase of the earthâ€™s average temperature of the surface, causing extreme weather to be even more severe such as hurricanes, droughts, heat waves,  and even blizzards."
+  document.getElementById("buttont3").innerHTML = "That is incorrect. Climate change means the increase of the earth's average temperature of the surface, causing extreme weather to be even more severe such as hurricanes, droughts, heat waves,  and even blizzards."
 }
 function f3button() {
   document.getElementById("buttont3").innerHTML = ""
@@ -24,7 +24,7 @@ function f3button() {
 }
 function t4button() {
   document.getElementById("buttonf4").innerHTML = ""
-  document.getElementById("buttont4").innerHTML = "That is incorect. This is no longer an excuse to not act on climate change, because we are already facing many of the devastating effects on global food supplies, increasing migration, conflict, disease and global instability, and this will only get worse if we donâ€™t act now."
+  document.getElementById("buttont4").innerHTML = "That is incorect. This is no longer an excuse to not act on climate change, because we are already facing many of the devastating effects on global food supplies, increasing migration, conflict, disease and global instability, and this will only get worse if we don't act now."
 }
 function f4button() {
   document.getElementById("buttont4").innerHTML = ""
@@ -40,7 +40,7 @@ function f5button() {
 }
 function t6button() {
   document.getElementById("buttonf6").innerHTML = ""
-  document.getElementById("buttont6").innerHTML = "That is incorrect. Because the speed of climate change is so rapid, itâ€™s becoming impossible for animals to adapt to its changing environment."
+  document.getElementById("buttont6").innerHTML = "That is incorrect. Because the speed of climate change is so rapid, it's becoming impossible for animals to adapt to its changing environment."
 }
 function f6button() {
   document.getElementById("buttont6").innerHTML = ""
