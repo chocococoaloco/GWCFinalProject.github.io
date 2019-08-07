@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Master.css">
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <script src = "../JS/Home.js">
+
+    </script>
+    <title>Make the Earth Ours Again</title>
+  </head>
+  <body>
+
+
+    <header class = "headingbar">
+        <!-- <embed class = "header" src="Header.html"/> -->
+        <div class = "title_bar">
+            <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll">Make the Earth Ours Again</marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="Home.html" style = "background-color:black; color: white">Home</a>
+          <a id = "EndangeredAnimals" href="EndangeredAnimals.html">Endangered Animals</a>
+          <a href="PeopleAffected.html">People Affected</a>
+          <a href="WaysToHelp.html">Ways to Help</a>
+          <a href="Contact.html">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Biomes/Desert.html">Desert</a></td>
+                <td><a href="Biomes/Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/#Grasslands.html">Grasslands</a></td>
+                <td><a href="Biomes/#TemperateForest">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/Marine.html">Marine</a></td>
+                <td><a href="Biomes/TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/Savanna.html">Savanna</a></td>
+                <td><a href="Biomes/Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+    </header>
+
+    <h1 id = "mission"> Our Mission</h1>
+    <h2 style = "padding-left: 4vw; padding-right: 4vw;color: black"> Climate change is becoming larger than ever and almost no one is talking about it. Our goal is to bring awareness to people of all ages of what is going on on their planet.  We think it is important for people to know what is happening in their environment. People plan to be here for a while, in which they should want to take care of the place they live. The Earth is our home, and our home is dying.<h2>
+      <details open>
+        <summary>Tweets on Climate Change</summary>
+        <br><br><br><br><br><br>
+        <a class = "twitter-timeline" href = "https://twitter.com/climatechange?ref_src=twsrc%5Etfw" data-width: "300" data-height = "425">Tweets by climatechange</a>
+        <script asyn src = "https://platform.twitter.com/widgets.js" charset = "utf-8"></script>
+      </details>
+    <div class = "our_mission" id = "mission_image">
+      <div class = "missionOpacity">
+      </div>
+        </div>
+
+
+      <div class = "bodyInfo">
+        <h3> Climate Change Misconceptions</h3>
+      <P>Climate change is any significant long-term change in the expected patterns of average weather of a region (or the whole Earth) over a significant period of time. Climate change is about abnormal variations to the climate, and the effects of these variations on other parts of the Earth.</p>
+        <p>With Climate Change being a topic that is talked about a lot, there seems to be a lot of misconceptions spreading around which leads false information to be spread as well. It is super important to know and understand how and why Climate is happening, and what we can do before it worsens.</p>
+        <p>Take the true or false test to test your knowledge on Climate Change </p>
+        <div class="myth1">
+          <h3>The Climate changing is normal</h3>
+          <button onclick="tbutton()">True</button>  <button onclick="fbutton()">False</button>
+          <p id="demo"></p>
+          <p id="answer"></p>
+        </div>
+        <br><br>
+        <div class="myth2">
+          <h3>The carbon in the air is good for the plants.</h3>
+          <button onclick="t2button()">True</button> <button onclick="f2button()">False</button>
+          <p id="buttont2"></p>
+          <p id="buttonf2"></p>
+        </div>
+        <br><br>
+        <div class="myth3">
+          <h3>Global warming is not real because it is still cold outside.</h3>
+          <button onclick="t3button()">True</button> <button onclick="f3button()">False</button>
+          <p id="buttont3"></p>
+          <p id="buttonf3"></p>
+        </div>
+        <br><br>
+        <div class="myth4">
+          <h3>Climate change is a future problem.</h3>
+          <button onclick="t4button()">True</button> <button onclick="f4button()">False</button>
+          <p id="buttont4"</p>
+          <p id="buttonf4"</p>
+        </div>
+        <br><br>
+        <div class="myth5">
+          <h3>Renewable energy is just a money-making scheme.</h3>
+          <button onclick="t5button()">True</button> <button onclick="f5button()">False</button>
+          <p id="buttont5"></p>
+          <p id = "buttonf5"></p>
+        </div>
+        <br><br>
+        <div class="myth6">
+          <h3>Animals will adapt to climate change.</h3>
+          <button onclick="t6button()">True</button> <button  onclick="f6button()">False</button>
+          <p id="buttont6"></p>
+          <p id="buttonf6"></p>
+        </div>
+        <br><br>
+        <div class="myth7">
+          <h3>China is the only country responsible for climate change.</h3>
+          <button onclick="t7button()">True</button> <button onclick="f7button()">False</button>
+          <p id="buttont7"></p>
+          <p id="buttonf7"></p>
+        </div>
+      </div>
+  </body>
+</html>

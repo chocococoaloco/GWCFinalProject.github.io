@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="Header.css"> -->
+    <link rel="stylesheet" href="../../CSS/Master.css">
+    <link rel="stylesheet" href="../../CSS/Slideshow.css">
+    <link rel="javascript" href="../../JS/allSlideshow.js">
+    <link rel="stylesheet" href="../../CSS/Header.css">
+
+    <!-- <link rel="stylesheet" href="slideShow.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <script>
+      var i = 0; //start!
+      var images =[]; // empty array for pictures
+      var time = 3000; //time in milliseconds
+      //image list
+      images[0] = '../../Images/Animals/Marine/sea-turtle.jpg';
+      images[1] = '../../Images/Animals/Marine/cape-peng.jpg';
+      images[2] = '../../Images/Animals/Marine/manatee.jpg';
+      //Change Image
+      function changeImg(){
+        document.slide.src = images[i];
+        if (i < images.length - 1){
+          i++;
+        } else {
+          i = 0;
+        }
+            setTimeout("changeImg()", time);
+          }
+
+          window.onload = changeImg
+    </script>
+    <title> Marine Biome </title>
+  </head>
+  <body>
+    <header class = "headingbar">
+        <!-- <embed class = "header" src="Header.html"/> -->
+        <div class = "title_bar">
+        <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll"> Marine Biome </marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="../Home.html">Home</a>
+          <a id = "EndangeredAnimals" href="../EndangeredAnimals.html"  style = "background-color:black; color: white">Endangered Animals</a>
+          <a href="../PeopleAffected.html">People Affected</a>
+          <a href="../WaysToHelp.html">Ways to Help</a>
+          <a href="../Contact.html">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Desert.html">Desert</a></td>
+                <td><a href="Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="#Grasslands.html">Grasslands</a></td>
+                <td><a href="#TemperateForest.html">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Marine.html">Marine</a></td>
+                <td><a href="TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Savanna.html">Savanna</a></td>
+                <td><a href="Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </header>
+   <br>
+
+
+<!-- <div style="text-align:center;margin-top:40px;"><a class="btn second" href="#">Learn More</a></div>
+
+<div style="text-align:center;margin-top:40px;"><a class="btn three" href="#">Learn More</a></div> -->
+  <div class="biomeInformation">
+    <h1> Marine Biome </h1>
+    <p>The marine biome is the largest biome, covering 70% of the earth. It provides homes for over 700,000 species and plays a critical part in absorbing carbon from the atmosphere. But as carbon emissions increase drastically, the amount of carbon being absorbed is causing the ocean to become acidic. As the ocean becomes more acid, it ruins the ph balance of the water, changing everything such as the ecosystem. Ocean acidification causes coral bleaching, killing them, who provide shelter and food for thousands of species; They are the foundation of the marine ecosystem. Ultimately, the dying of coral reefs will affect humans as well. The presence of coral reefs is imperative to our survival since we rely on them for food, medicine, coastal protection, and tourism dollars.
+    </p><br><br>
+
+    <img name="slide" width="600" height="375" class ="center">
+
+    <h2 class = "animalTitle"> Sea Turtle </h2>
+    <p> Seven different species of sea (or marine) turtles grace our ocean waters, from the shallow seagrass beds of the Indian Ocean, to the colorful reefs of the Coral Triangle, and even the sandy beaches of the Eastern Pacific. Nearly all species of sea turtle are classified as Endangered. Sea Turtles have long been slaughtered for their eggs, meat, skin and shells. They also suffer from poaching and over-exploitation. They also face habitat destruction and accidental capture in fishing gear. Climate change has an impact on turtle nesting sites.</p>
+    <div style="text-align:center;margin-top:40px;">
+      <a class="btn first" href="#" onclick="window.location='https://www.worldwildlife.org/species/sea-turtle';">Click Here For More Info </a>
+    </div>
+    <br>
+    <h2 class = "animalTitle">  Cape Penguins </h2>
+    <p> African Cape Town Penguins have been on their way to extinction ever since industrial fishing began in the Cape. Over the last for four years, BirdLife International has seen a population crash in these penguins.BirdLife International report that recent data have revealed that the African penguin is undergoing a very rapid population decline, probably as a result of commercial fisheries and shifts in prey populations. Worryingly, the assessment notes that this trend shows no sign of reversing, and immediate conservation action is required to prevent further declines.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/53NpMlu1fQk?start=20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class = "center"></iframe>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a class="btn first" href="#" onclick="https://www.smithsonianmag.com/videos/category/science/efforts-to-save-the-african-penguin/';">Click Here For More Info </a>
+    </div>
+    <br>
+
+    <h2 class = "animalTitle"> Manatees </h2>
+    <p>Did you know that manatees are related to elephants?  Manatees are large aquatic mammals, and sometimes they're referred to as “sea cows.” They  play an important role in maintaining a healthy ecosystem.Manatees eat a LOT of sea grass.  By doing so, they keep the grass short, which helps maintain the health of the sea grass beds.There are two major threats: loss of habitat and collisions with boats and ships. As new developments are built along waterways, natural nesting areas are destroyed.  Sewage, manure, and fertilizer run-off enters the water and causes algal blooms.  Some of this algae is toxic and can kill manatees if they eat it. The first step in saving the manatees is an informed public. Educational campaigns teach boaters to look for patterns caused by a manatee’s tail on the surface of the water so they'll know if a manatee is nearby and to proceed cautiously through shallow waterways.</p>
+    <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="window.location='https://defenders.org/wildlife/florida-manatee';">Click Here For More Info </a></div>
+    <br>
+  </div>
+
+  </body>
+  <footer></footer>
+</html>

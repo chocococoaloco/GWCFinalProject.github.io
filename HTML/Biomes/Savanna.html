@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="Header.css"> -->
+    <link rel="stylesheet" href="../../CSS/Slideshow.css">
+    <link rel="stylesheet" href="../../css/Master.css">
+    <link rel="stylesheet" href="../../CSS/Header.css">
+
+    <link rel="javascript" href="../../JS/allSlideshow.js">
+    <!-- <link rel="stylesheet" href="slideShow.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+
+    <script>
+       var i = 0; //start!
+       var images =[]; // empty array for pictures
+       var time = 3000; //time in milliseconds
+    //image list
+       images[0] = '../../Images/Animals/Savanna/Black_Rhinos_Kenya.jpg';
+       images[1] = '../../Images/Animals/Savanna/africanWildDog.jpg';
+       images[2] = '../../Images/Animals/Savanna/giant-anteater.jpg';
+       //Change Image
+       function changeImg(){
+         document.slide.src = images[i];
+         if (i < images.length - 1){
+           i++;
+         }
+         else {
+           i = 0;
+         }
+         setTimeout("changeImg()", time);
+       }
+       window.onload = changeImg
+       </script>
+       <title> Savanna Biome </title>
+  </head>
+  <body>
+    <header class = "headingbar">
+        <!-- <embed class = "header" src="Header.html"/> -->
+        <div class = "title_bar">
+        <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll"> Savanna Biome </marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="../Home.html">Home</a>
+          <a id = "EndangeredAnimals" href="../EndangeredAnimals.html"  style = "background-color:black; color: white">Endangered Animals</a>
+          <a href="../PeopleAffected.html">People Affected</a>
+          <a href="../WaysToHelp.html">Ways to Help</a>
+          <a href="../Contact.html">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Desert.html">Desert</a></td>
+                <td><a href="Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="#Grasslands.html">Grasslands</a></td>
+                <td><a href="#TemperateForest.html">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Marine.html">Marine</a></td>
+                <td><a href="TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Savanna.html">Savanna</a></td>
+                <td><a href="Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </header>
+    <div class="biomeInformation">
+
+    <!-- ***title of Biome*** -->
+      <h1> Savanna Biome </h1>
+       <!-- ***insert the basic information about this biome ***  -->
+      <p>The Savanna Biome is expected to have a change in rain patterns, meaning more dry periods and less annual rainfall in the next decades because of climate change. The Savanna already doesn't recieve too much water, it only gets rainfall during wet season, relying on water as much as it does the savanna will be vulnerable when it starts experiencing dry spells. These dry spells will also make the savanna susceptible to rapid fires that will harm the plants and trees.</p>
+      <br>
+      <p>Climate change is also a part of the reason that these animals are critically endangered </p><br><br>
+      <img name="slide" width="600" height="375" class ="center">
+       <!-- ***insert WHY they are endangered && What we can do*** -->
+      <h2 class = "animalTitle"> Black Rhino </h2>
+      <br>
+      <p>The black rhino is an endangered animal in the savanna, they are endangered because of poaching, losing their habitat, disease, and their lack of genetic diversity which means most of them get sick from the same things. What you can do to help the black rhinos is contact government officials in Africa and Asia and talk to them about poaching and working on stronger laws against that, you can also donate to rhino conservation organizations and volunteer for charities and educate others.
+      </p>
+      <div style="text-align:center;margin-top:40px;">
+        <a class="btn first" href="#" onclick="window.location='http://www.blackrhinoconservation.com/';">Click Here For More Info </a>
+      </div>
+      <br>
+
+      <h2 class = "animalTitle">  African  Wild Dog </h2>
+      <p>African wild dogs are a critically endangered species in the Savanna, they are endangered because of a continuous habitat fragmentation, conflict with human activity, and infectious diseases. You can help grow the population of african wild dogs by advocating for them and engaging local communities to protect their wildlife, also if you feel motivated donating to Wild Life Foundation.</p>
+      <div style="text-align:center;margin-top:40px;">
+        <a class="btn first" href="#" onclick="window.location='https://www.awf.org/wildlife-conservation/african-wild-dog';">Click Here For More Info </a>
+      </div>
+      <br>
+      <br>
+
+      <h2 class = "animalTitle"> Giant Anteater </h2>
+      <p>The giant anteater is another endangered species in the savanna, they are on the verge of being endangered because of habitat descrution, fires, roadkill, and because they get poached for their fur and bushmeat. Ways you can help include advocating for anteaters by volunteering for conservation organizations and as always donating to zoos to help save the anteaters. </p>
+      <div style="text-align:center;margin-top:40px;">
+        <a class="btn first" href="#" onclick="window.location='https://www.houstonzoo.org/explore/animals/anteater/';">Click Here For More Info </a>
+      </div>
+    </div>
+    <footer> </footer>
+  </body>
+</html>

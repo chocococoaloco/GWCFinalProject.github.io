@@ -1,0 +1,73 @@
+#question1, #question2, #question3, #question4, #question5, #question6, #quizRestart {
+  display: none;
+}
+.quizResultText {
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+#quizBad {
+  color:red;
+}
+
+#answerscorehide {
+  display: none;
+  font-size: 1.3vw;
+
+}
+.CYOAQuiz {
+  height: 40%;
+  overflow: hidden;
+}
+.answerbutton {
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  background-color: #89cff0;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  font-size: 2vw;
+}
+#answerYes {
+  position: relative;
+  left: 30%;
+}
+#answerNo {
+  position: relative;
+  left: 30%;
+}
+
+#startButton {
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  background-color: #89cff0;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  font-size: 30px;
+  position: relative;
+  top: 20%;
+  left: 40%;
+}
+#startGame {
+  text-align: center;
+}
+
+#quizRestart {
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  background-color: #89cff0;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  font-size: 30px;
+  position: relative;
+  top: 20%;
+  left: 40%;
+}
+.resultText {
+  font-size: 2.8vw;
+}
+#quizDetails {
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: black;
+}

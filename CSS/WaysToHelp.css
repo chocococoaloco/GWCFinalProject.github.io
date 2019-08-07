@@ -1,0 +1,200 @@
+#mission_image {
+  background: url("../Images/WaysToHelp.jpg");
+  background-size: cover;
+  margin: 0;
+ position: relative;
+ width: 100%;
+ opacity: 1;
+ background-position: center;
+ background-attachment: fixed;
+ height: 50vh;
+ width: 97vw;
+}
+#mission {
+  color: black;
+}
+.beforeAfterClass {
+  position: relative;
+  top: 10vh;
+
+}
+
+#BeforeFire{
+  height: 300px;
+  object-fit: none;
+  object-position: 0% 0;
+  width: 200px;
+  z-index: -1;
+}
+#AfterFire, #AfterDrought {
+  height: 300px;
+  object-fit: none;
+  object-position: 100% 0;
+  width: 200px;
+  z-index: -1;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 400px;
+  height: 25px;
+  background: transparent;
+  position: relative;
+  top: -169px;
+  /* background-color: #3071a9; */
+  /* background: #3071a9; */
+  /* color: #3071A9; */
+  outline: none;
+  opacity: 1;
+  z-index: 1;
+}
+.slider:hover{
+  opacity: 1;
+}
+/* #slider::-webkit-slider-runner-track {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #3071a9;
+  cursor: pointer;
+} */
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 300px;
+  /* height: 300px; */
+  background: white;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#BeforeDrought {
+  height: 300px;
+  object-fit: none;
+  object-position: 0% 85%;
+  width: 200px;
+  z-index: -1;
+}
+/*#AfterDrought {
+  height: 300px;
+  object-fit: none;
+  object-position: 100% 0;
+  width: 200px;
+  z-index: -1;
+} */
+#BeforeATT, #BeforeMiami {
+  transform: scale(1);
+  height: 300px;
+  object-fit: none;
+  object-position: 0% 85%;
+  width: 360px;
+  z-index: -1;
+}
+#AfterATT, #AfterMiami {
+  height: 300px;
+  object-fit: none;
+  object-position: 100% 85%;
+  width: 360px;
+  z-index: -1;
+}
+#ForestFireSlider, #DroughtSlider, #MiamiSlider, #ATTSlider {
+  display: none;
+  transition: display 2s;
+
+}
+.BeforeAfterBar {
+  margin-left: 15vw;
+}
+  /* .BeforeAfterButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Merriweather, "Times New Roman", Times, Serif;
+    font-size: 2vw;
+    margin: 1vw;
+
+  }
+  .BeforeAfterButton:hover {
+    color: gray;
+  } */
+
+.BeforeAfterButton {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 16vw;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    letter-spacing: 0.4vw;
+    font-size: 0.95vw;
+    color: transparent !important;
+    background: #739590;
+    border: 2px solid #739590;
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, .8);
+    overflow: hidden;
+  }
+
+.BeforeAfterButton:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    color: #FFF;
+    transition: .6s;
+}
+#ForestFire:before {
+  content: "Durango Forest";
+}
+#Drought:before {
+  content: "Lake Oroville";
+}
+#ATT:before {
+  content: "AT&T Field";
+}
+#Miami:before {
+  content: "Miami Beach";
+}
+.BeforeAfterButton:after{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    color: #FFF;
+    transition: .6s;
+}
+#ForestFire:after {
+  content: "Forest Fire";
+}
+#Drought:after {
+  content: "Drought";
+}
+#ATT:after {
+  content: "Flooding";
+}
+#Miami:after {
+  content: "Flooding";
+}
+.BeforeAfterButton:hover:before {
+    top: -100%;
+    left: 100%;
+}
+.BeforeAfterButton:hover:after {
+    top: 0;
+    left: 0;
+}
+#ATTSlider, #MiamiSlider {
+  margin-left: 20vw;
+}
+#ForestFireSlider, #DroughtSlider {
+  margin-left: 30vw;
+}

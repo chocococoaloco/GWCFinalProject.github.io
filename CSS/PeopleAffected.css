@@ -1,0 +1,81 @@
+
+/* header {
+  height: 13vh;
+  opacity: 1;
+  z-index: 1;
+} */
+#mission_image {
+  background: url("../Images/PeopleAffected.jpg");
+  background-size: cover;
+  margin: 0;
+ position: relative;
+ width: 100%;
+ opacity: 1;
+ background-position: center;
+ background-attachment: fixed;
+ height: 50vh;
+ width: 97vw;
+}
+.text {
+  position: absolute;
+  padding: 2vh;
+
+}
+
+.subtitle {
+  font-size: 3vw;
+  color:black;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  width: 50%;
+}
+h4 {
+  font-size: 70px;
+  text-align: center;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  line-height: 5vh;
+}
+h5 {
+  font-size: 75px;
+  text-align: center;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+}
+.hurricane {
+  background-color: #fff;
+  width: 100%;
+  margin-left: 0;
+  left: 0;
+
+}
+.health {
+  background-color: White;
+}
+#damageText {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+#toTopOfPage {
+  border-radius: 5vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: transparent;
+  background-image: url( "../Images/moveToTop.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: none;
+  border: none;
+  z-index: 10;
+  position: fixed;
+  bottom: 7vh;
+  right: 7vw;
+  margin: 3vw;
+  z-index: 99;
+}
+#toTopOfPage:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,91 @@
+.menu_bar {
+  width: 98vw;
+  height: 15vh;
+  padding-top: 4vh;
+  padding-left: 14vw;
+}
+.menu_bar a {
+  float:left;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  font-size: 1.7vw;
+  position: relative;
+  left:0;
+  font-style: normal;
+  background-color: white;
+  opacity: 0.6;
+  display: block;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 2vh;
+  text-align: center;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.menu_bar a:hover {
+  color: white;
+  background-color: black;
+  opacity: 0.4;
+
+}
+.dropdownAnimals {
+  display:block;
+  position: relative;
+  top: 8.8vh;
+  left: -60vw;
+  display:none;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.dropdownAnimals a {
+  font-size: 1vw;
+}
+.dropdownAnimals:hover {
+  display: block;
+}
+#EndangeredAnimals:hover~.dropdownAnimals {
+  display: block;
+}
+.dropdownAnimalContent {
+  width: 0vw;
+  background-color: white;
+}
+header {
+  overflow: hidden;
+  background-image: url("../Images/HeaderPic.jpg");
+  background-repeat: no-repeat;
+  height: 35vh;
+  border: 2px solid white;
+}
+.title_bar {
+  /* vertical-align: top; */
+}
+#title {
+  padding-top: 3vw;
+  font-size: 6vw;
+  position: relative;
+  left: 10vw;
+  width: 80vw;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  height: 18vh;
+  color: white;
+  text-align: center;
+}
+.body_header {
+  height: 3vw;
+  position: relative;
+  color:white;
+  /* border: 2px solid white; */
+  /* overflow:hidden; */
+}
+h2{
+  color: orange;
+  text-align:left;
+}
+
+h1{
+  text-align: center;
+  font-size: 75px;
+}

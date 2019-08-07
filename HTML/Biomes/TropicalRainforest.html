@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/Slideshow.css">
+    <link rel="stylesheet" href="../../css/Master.css">
+    <link rel="stylesheet" href="../../CSS/Header.css">
+
+    <link rel="javascript" href="../../JS/allSlideshow.js">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <title> Tropical Rainforest Biome </title>
+  <script>
+     var i = 0; //start!
+     var images =[]; // empty array for pictures
+     var time = 3000; //time in milliseconds
+  //image list
+     images[0] = '../../Images/Animals/TropicalRainforest/bengal-tiger.jpg';
+     images[1] = '../../Images/Animals/TropicalRainforest/pygmy.jpg';
+     images[2] = '../../Images/Animals/TropicalRainforest/blue-morpho-butterfly.jpg';
+     //Change Image
+  function changeImg(){
+    document.slide.src = images[i];
+      if (i < images.length - 1){
+         i++;
+       } else {
+         i = 0;
+       }
+       setTimeout("changeImg()", time);
+     }
+     window.onload = changeImg;
+     </script>
+  </head>
+  <body>
+    <header class = "headingbar">
+        <!-- <embed class = "header" src="Header.html"/> -->
+        <div class = "title_bar">
+        <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll"> Savanna Biome </marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="../Home.html">Home</a>
+          <a id = "EndangeredAnimals" href="../EndangeredAnimals.html"  style = "background-color:black; color: white">Endangered Animals</a>
+          <a href="../PeopleAffected.html">People Affected</a>
+          <a href="../WaysToHelp.html">Ways to Help</a>
+          <a href="../Contact.html">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Desert.html">Desert</a></td>
+                <td><a href="Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="#Grasslands.html">Grasslands</a></td>
+                <td><a href="#TemperateForest.html">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Marine.html">Marine</a></td>
+                <td><a href="TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Savanna.html">Savanna</a></td>
+                <td><a href="Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </header>
+
+  <div class="biomeInformation">
+      <h1> Tropical Rainforest Biome </h1>
+
+      <p>The Tropical rainforest Biome houses millions of species and is close to the equator, its average temperature is 20 to 25 degreed celsius. Some rare species and isolated populations that live in this biome are threatened by the extreme heat waves caused by climate change. Climate change is expected to turn 30 to 60 percent of the tropical rainforest into a savanna.</p>
+       <br>
+       <p>Climate change is putting these animals on the verge of extinction </p><br><br>
+
+
+
+            <img name="slide" width="600" height="375" class ="center">
+
+       <h2 class = "animalTitle"> Bengal Tiger </h2>
+       <br>
+         <p>Bengal tigers are hunted illegally because their skin and some body parts are considered useful for traditional Asian medicine. Bengal tigers also face population fragmentation, habitat loss, and a decrease of their prey. Also rising sea levels are pushing these tigers out of their habitat as the water claims more and more of their habitat, and causes their freshwater to become saline. You can help them by only buying products from sustainable companies and never buying real fur.  </p>
+           <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="window.location='http://www.animalplanet.com/wild-animals/endangered-species/bengal-tiger/';">Click Here For More Info </a></div>
+
+       <br>
+      <h2 class = "animalTitle"> Pygmy Sloth</h2>
+      <p> The Pygmy Sloth is an endangered species because of humans cutting down the red mangrove trees where sloths live, taking away their habitat. The health of sloth populations is connected to the health of tropical rain forests. But tropical rain forests are at risk of deforestation. Without an abundance of trees, sloths will lose their shelter and food source. When sloths come to the forest floor, which they do once a week to relieve themselves—they are more exposed to predators and can do little to fend them off. You can help the pygmy sloths by advocating against deforestation and speaking up about climate change </p>
+      <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="https://www.worldwildlife.org/species/sloth';">Click Here For More Info </a></div>
+
+      <br>
+
+       <h2 class = "animalTitle">  Blue Morpho Butterfly </h2>
+       <p>Blue Morpho Butterflies are endangered because of deforestation causing habiat loss and less cover. You can help these butterflies by using less fuel, and advocating to change the way we act about climate changing   </p>
+       <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="window.location='https://www.activewild.com/blue-morpho-butterfly-facts/';">Click Here For More Info </a></div>
+      <br>
+    </div>
+  </body>
+  <footer></footer>
+</html>

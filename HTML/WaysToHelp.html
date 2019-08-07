@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Master.css">
+    <link rel="stylesheet" href="../css/WaysToHelp.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../css/Quiz.css">
+    <script src = "../JS/WaysToHelp.js"></script>
+    <script src = "../JS/Quiz.js"></script>
+    <title>Make the Earth Ours Again</title>
+  </head>
+  <body>
+    <header class = "headingbar">
+        <!-- <embed class = "header" src="Header.html"/> -->
+        <div class = "title_bar">
+            <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll">Make the Earth Ours Again</marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="Home.html" >Home</a>
+          <a id = "EndangeredAnimals" href="EndangeredAnimals.html">Endangered Animals</a>
+          <a href="PeopleAffected.html">People Affected</a>
+          <a href="WaysToHelp.html" style = "background-color:black; color: white">Ways to Help</a>
+          <a href="Contact.html">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Biomes/Desert.html">Desert</a></td>
+                <td><a href="Biomes/Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/#Grasslands.html">Grasslands</a></td>
+                <td><a href="Biomes/#TemperateForest">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/Marine.html">Marine</a></td>
+                <td><a href="Biomes/TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/Savanna.html">Savanna</a></td>
+                <td><a href="Biomes/Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+    </header>
+    <h1 id = "mission"> Ways To Help</h1>
+    <div class = "our_mission" id = "mission_image">
+    </div>
+    <div class = "CYOAQuiz">
+       <p style = "padding-left: 4vw; padding-right: 4vw;"> Many people believe that if they don't do anything,then the world will fix itself as it has before. Unfortunately, this is not the case anymore. Climate change is not only effecting the environment, but people as well. With a small contribution from everyone, the planets' problems such as climate change can potentionally slow down the affects. Play the game below to see how much you are contributing to desrtoying our planet!</p>
+      <div id = "StartGame">
+        <h1>Are You The Problem</h1>
+        <br>
+        <button id = "startButton" type="button" name="StartGame" onclick = "AreYouTheProblem()">Start Game</button>
+      </div>
+      <h1 id = "answerscorehide">0</h1>
+      <div id = "quizquestions">
+        <div id = "question1">
+          <h1>Do you use solar energy?</h1>
+          <button class = "answerbutton" id = "answerYes" type="button" name="Yes" onclick = "choiceYes1()">Yes</button>
+          <button class = "answerbutton" id = "answerNo" type="button" name="No" onclick = "choiceNo1()">No</button>
+        </div>
+        <div id = "question2">
+          <h1>Do you use 2?</h1>
+          <button class = "answerbutton"id = "answerYes" type="button" name="Yes" onclick = "choiceYes2()">Yes</button>
+          <button class = "answerbutton"id = "answerNo" type="button" name="No" onclick = "choiceNo2()">No</button>
+        </div>
+        <div id = "question3">
+          <h1>Do you use 3?</h1>
+          <button class = "answerbutton" id = "answerYes" type="button" name="Yes" onclick = "choiceYes3()">Yes</button>
+          <button class = "answerbutton" id = "answerNo" type="button" name="No" onclick = "choiceNo3()">No</button>
+        </div>
+        <div id = "question4">
+          <h1>Do you use 4?</h1>
+          <button class = "answerbutton" id = "answerYes" type="button" name="Yes" onclick = "choiceYes4()" >Yes</button>
+          <button class = "answerbutton" id = "answerNo" type="button" name="No" onclick = "choiceNo4()" >No</button>
+        </div>
+        <div id = "question5">
+          <h1>Do you use 5?</h1>
+          <button class = "answerbutton" id = "answerYes" type="button" name="Yes" onclick = "choiceYes5()">Yes</button>
+          <button class = "answerbutton" id = "answerNo" type="button" name="No" onclick = "choiceNo5()">No</button>
+        </div>
+        <div id = "question6">
+          <h1>Do you use 6?</h1>
+          <button class = "answerbutton" id = "answerYes" type="button" name="Yes" onclick = "choiceYes6()">Yes</button>
+          <button class = "answerbutton" id = "answerNo" type="button" name="No" onclick = "choiceNo6()" >No</button>
+        </div>
+      </div>
+      <div class = "quizResult">
+        <div class = "quizResultText" id = "quizGood">
+          <h1 class = "resultText">
+            Congratulations, you are helping the environment!
+          </h1>
+          <p id = "quizDetails" >Visit the Contact Page to contact your local representatives and urge them to take action to stop cliamte change.</p>
+          <a  id = "quizDetails" href = "Contact.html"> Go > </a>
+        </div>
+        <div class = "quizResultText" id = "quizBad">
+          <h1 class = "resultText">
+            YOU are part of the problem!
+          </h1>
+          <p id = "quizDetails" >Visit the 'Ways To Help' section to learn about how you can help the environment.</p>
+          <a  id = "quizDetails" href="#WaysToHelp"> Go > </a>
+        </div>
+        <br>
+        <button id = "quizRestart" type="button" name="Restart" onclick = "AreYouTheProblem()">Recalculate your score</button>
+      </div>
+    </div>
+
+<br><br><br>
+    <div id="WaysToHelp">
+      <h2 style = "color: #18F210; text-align: center;"> 10 Ways to Help Save the Earth! </h2>
+            <ul>
+              <li> <strong> Reduce, reuse, and recycle </strong> - Cut down on what you throw away. Follow the three "R's" to conserve natural resources and landfill space. </li>
+              <li> <strong> Volunteer </strong> - Volunteer for cleanups in your community. You can get involved in protecting your watershed, too. </li>
+              <li> <strong> Educate </strong> - When you further your own education, you can help others understand the importance and value of our natural resources. </li>
+              <li> <strong> Conserve water </strong> - The less water you use, the less runoff and wastewater that eventually end up in the ocean.</li>
+              <li> <strong> Choose sustainable </strong> - Learn how to make smart seafood choices at www.fishwatch.gov.</li>
+              <li> <strong> Shop wisely </strong> - Buy less plastic and bring a reusable shopping bag.</li>
+              <li> <strong> Use long-lasting light bulbs </strong> - Energy efficient light bulbs reduce greenhouse gas emissions. Also flip the light switch off when you leave the room! </li>
+              <li> <strong> Plant a tree </strong> - Trees provide food and oxygen. They help save energy, clean the air, and help combat climate change.</li>
+              <li> <strong> Don't send chemicals into our waterways </strong> - Choose non-toxic chemicals in the home and office. </li>
+              <li> <strong> Bike more. Drive less. </strong> </li>
+            </ul>
+    </div>
+    <div class="beforeAfterClass">
+     <h3 style = "font-size: 2vw; padding-left: 4vw; padding-right: 4vw;"> Below are pictures of our world today, move the slider to see the potential damage climate change is bringing. Is this the world you want your kids to live in... if there is one?</h3>
+     <br><br>
+      <div class="BeforeAfterBar">
+        <button class = "BeforeAfterButton" id = "ForestFire" type="button" name="ForestFire" onclick = "showSlider('ForestFireSlider')">Forest Fire</button>
+        <button class = "BeforeAfterButton" id = "Drought" type="button" name="Drought" onclick = "showSlider('DroughtSlider')">Drought</button>
+        <button class = "BeforeAfterButton" id = "ATT" type="button" name="ATT" onclick = "showSlider('ATTSlider')">Flooding</button>
+        <button class = "BeforeAfterButton" id = "Miami" type="button" name="Miami" onclick = "showSlider('MiamiSlider')">Flooding</button>
+      </div>
+      <div class="BeforeAndAfter">
+        <div id = "ForestFireSlider">
+          <img id = "BeforeFire" src="../Images/ForestFireBefore.png" alt="Forest Fire Before">
+          <img id = "AfterFire" src="../Images/ForestFireAfter.png" alt="Forest Fire After">
+          <br>
+          <input class = "slider" id = "sliderFire" type="range" min = "0" max = "400" value = "200" name="test" oninput = "slider('sliderFire','BeforeFire', 'AfterFire', 400)">
+        </div>
+
+        <div id = "DroughtSlider">
+          <img id = "BeforeDrought" src="../Images/DroughtBefore.png" alt="Drought Before">
+          <img id = "AfterDrought" src="../Images/Capture.png" alt="Drought After">
+          <br>
+          <input class = "slider" id = "sliderDrought" type="range" min = "2" max = "398" value = "200" name="test" oninput = "slider('sliderDrought','BeforeDrought', 'AfterDrought', 400)">
+        </div>
+
+        <div id = "ATTSlider">
+          <img id = "BeforeATT" src="../Images/ATTBefore.jpg" alt="AT&T Field Before">
+          <img id = "AfterATT" src="../Images/ATTAfter.jpg" alt="AT&T Field After">
+          <br>
+          <input class = "slider" id = "sliderATT" type="range" min = "2" max = "718" value = "360" name="test" style = "width: 720px" oninput = "slider('sliderATT','BeforeATT', 'AfterATT', 720)">
+        </div>
+
+        <div id = "MiamiSlider">
+          <img id = "BeforeMiami" src="../Images/MiamiBefore.jpg" alt="Miami Before">
+          <img id = "AfterMiami" src="../Images/MiamiAfter.jpg" alt="Miami After">
+          <br>
+          <input class = "slider" id = "sliderMiami" type="range" min = "2" max = "718" value = "360" name="test" style = "width: 720px" oninput = "slider('sliderMiami','BeforeMiami', 'AfterMiami', 720)">
+        </div>
+      </div>
+    </div>
+    <footer> </footer>
+  </body>
+</html>

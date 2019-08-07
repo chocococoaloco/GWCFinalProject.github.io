@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Master.css">
+    <link rel="stylesheet" href="../css/Contact.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <script src = "../JS/Contact.js">
+
+    </script>
+    <title>Make the Earth Ours Again</title>
+  </head>
+  <body>
+    <header class = "headingbar">
+        <!-- <embed class = "header" src="Header.html"/> -->
+        <div class = "title_bar">
+            <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll">Make the Earth Ours Again</marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="Home.html">Home</a>
+          <a id = "EndangeredAnimals" href="EndangeredAnimals.html">Endangered Animals</a>
+          <a href="PeopleAffected.html">People Affected</a>
+          <a href="WaysToHelp.html">Ways to Help</a>
+          <a href="Contact.html"  style = "background-color:black; color: white">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Biomes/Desert.html">Desert</a></td>
+                <td><a href="Biomes/Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/#Grasslands.html">Grasslands</a></td>
+                <td><a href="Biomes/#TemperateForest">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/Marine.html">Marine</a></td>
+                <td><a href="Biomes/TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Biomes/Savanna.html">Savanna</a></td>
+                <td><a href="Biomes/Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+    </header>
+    <div class = "contact">
+         <h1 id = "fa"> Contact</h1>
+         <h2 style = "color:black; padding-left:4vw; padding-right: 3vw;"> Now that you have learned what is really going on, you can be apart of the change! Type in your zip code to find your local representative and help "Make the Earth Ours Again!"
+
+         <br><br></h2>
+         </div>
+    <div class = "bodyInfo">
+      <div class = "ContactYourRepresentative">
+        <div class="repZipcode">
+          <h3>Enter your Zipcode</h3>
+            <input id = "repByZip" type="text" name = "repByZip" placeholder="Zipcode"></input>
+            <button id = "zipSubmit" type="submit" name="submitZip" onclick = "repByZip()">Go</button>
+        </div>
+        <div id = "repStats">
+        </div>
+      </div>
+
+        <br><br>
+      <div class = "resources">
+        <h2 style = "color: black; text-align: center;">More Websites to Visit...</h2>
+        <ul class = "extraLinks">
+          <li><a href = "https://www.opsociety.org/take-action/global-issues/climate-change/?gclid=CjwKCAjwyqTqBRAyEiwA8K_4O4fJZrKZNsMwPDgueLZfwqVxf88gDHYWGzm7tlFhIPIsA9YJG1RmFxoCfIcQAvD_BwE" target = "_blank" style = "color:blue"> Oceanic Preservation Society</a></li>
+          <li><a href = "https://www.conservationnw.org/our-work/habitat/climate-change-and-wildlife/"  target = "_blank" style = "color:blue">Conservation Northwestern</a></li>
+          <li><a href = "https://www.beyondcarbon.org" target = "_blank" style = "color:blue">Beyond Carbon </a></li>
+          <li><a href = "https://www.worldwildlife.org/"  target = "_blank" style = "color:blue">World Wildlife Foundation </a></li>
+          <li><a href = "https://climate.nasa.gov/" target = "_blank" style = "color:blue">National Aernautics and Space Administration </a></li>
+          <li><a href = "https://www.noaa.gov/climate" target = "_blank" style = "color:blue">National Oceanic and Atmospheric Administration </a></li>
+          <li><a href = "https://www.nationalgeographic.com/environment/climate-change/" target = "_blank" style = "color:blue">National Geographic </a></li>
+        </ul>
+      </div>
+    <footer></footer>
+  </body>
+</html>

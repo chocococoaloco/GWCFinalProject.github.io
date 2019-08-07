@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/Slideshow.css">
+    <link rel="stylesheet" href="../../css/Master.css">
+    <link rel="stylesheet" href="../../CSS/Header.css">
+
+    <link rel="javascript" href="../../JS/allSlideshow.js">
+    <!-- <link rel="stylesheet" href="slideShow.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Abel|Indie+Flower|PT+Sans+Narrow|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+
+  <title> Desert Biome </title>
+  <script>
+    var i = 0; //start!
+    var images =[]; // empty array for pictures
+    var time = 3000; //time in milliseconds
+    //image list
+    images[0] = '../../Images/Animals/Desert/gazelle.jpg';
+    images[1] = '../../Images/Animals/Desert/kit-fox.jpg';
+    images[2] = '../../Images/Animals/Desert/cheetah.jpg';
+    //Change Image
+    function changeImg(){
+      document.slide.src = images[i];
+      if (i < images.length - 1){
+        i++;
+      } else {
+        i = 0;
+      }
+          setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg
+  </script>
+  </head>
+  <body>
+      <header class = "headingbar">
+        <div class = "title_bar">
+        <marquee  id = "title" scrollamount="10" direction="left" behavior="scroll"> Desert Biome </marquee>
+        </div>
+        <div class="menu_bar">
+          <a href="../Home.html">Home</a>
+          <a id = "EndangeredAnimals" href="../EndangeredAnimals.html"  style = "background-color:black; color: white">Endangered Animals</a>
+          <a href="../PeopleAffected.html">People Affected</a>
+          <a href="../WaysToHelp.html">Ways to Help</a>
+          <a href="../Contact.html">Contact</a>
+          <div class = "dropdownAnimals">
+            <table class = "dropdownAnimalContent">
+              <tr>
+                <td><a href="Desert.html">Desert</a></td>
+                <td><a href="Taiga.html">Taiga</a></td>
+              </tr>
+              <tr>
+                <td><a href="#Grasslands.html">Grasslands</a></td>
+                <td><a href="#TemperateForest.html">Temperate Forest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Marine.html">Marine</a></td>
+                <td><a href="TropicalRainforest.html">Tropical Rainforest</a></td>
+              </tr>
+              <tr>
+                <td><a href="Savanna.html">Savanna</a></td>
+                <td><a href="Tundra.html">Tundra</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </header>
+   <br>
+    <!-- widget -->
+<!-- <details open>
+  <summary> Tweets on Climate Change </summary>
+   <a class="twitter-timeline" href="https://twitter.com/climatechange?ref_src=twsrc%5Etfw" data-width="300" data-height="425">Tweets by climatechange</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ </details> -->
+  <div class="biomeInformation">
+
+    <h1> Desert Biome </h1>
+    <p>A desert ecosystem that forms due to the low level of rainfall it receives each year. Deserts cover about 20% of the Earth. There are both hot and cold deserts. Antarctica is the largest cold desert in the world, while the Sahara in Africa is the largest of the hot deserts. </p><br><br><br><br><br>
+
+
+
+    <img name="slide" width="600" height="375" class ="center">
+
+      <h2 class = "animalTitle">Dama Gazelle</h2>
+
+      <p> The dama gazelle is the largest of the gazelles and was once common and widespread in arid and semi-arid regions of the Sahara. The dama gazelle is considered critically endangered due to over hunting and loss of their habitat due to livestock competition. The last remaining wild dama gazelle populations are highly fragmented and there are few protected areas or formal measures in place to preserve the species and its habitats.</p>
+      <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="window.location='https://nationalzoo.si.edu/animals/dama-gazelle';">Click Here For More Info </a></div>
+      <br>
+
+      <h2 class = "animalTitle">  Kit Fox </h2>
+      <p> Despite their dainty appearance, desert kit foxes are hardy animals, well adapted for living in the hot, harsh desert habitat from which they never stray. the keyhole-shaped entrances of kit fox burrows scattered across a wide area of California's Mojave and Colorado deserts. But these wild-canine quarters are increasingly empty — or destroyed — due to large-scale industrial energy development rapidly on the rise across the kit fox range. Even smart, climate-saving clean-energy development like solar projects are often badly sited and destroy important kit fox habitat.</p>
+      <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="https://www.wildlife.ca.gov/Keep-Me-Wild/Kit-Fox';">Click Here For More Info </a></div>
+      <br>
+
+      <h2 class = "animalTitle"> Northwestern African Cheetah </h2>
+      <p> The Northwestern African Cheetah,also known as the Saharan cheetah, is a cheetah subspecies native to the Sahara desert and the Sahel. It is listed as Critically Endangered on the IUCN Red List. In 2008, the population was suspected to number less than 250 mature individuals. As human populations grow and expand, agriculture, roads, and settlements destroy the open grasslands that cheetahs favor. Only 11% of their original habitat remains.</p>
+      <div style="text-align:center;margin-top:40px;"><a class="btn first" href="#" onclick="window.location='https://www.awf.org/wildlife-conservation/cheetah';">Click Here For More Info </a></div>
+      <br>
+  </div>
+  </body>
+  <footer></footer>
+</html>

@@ -1,0 +1,384 @@
+#mission_image {
+  background: url("../Images/EndangeredAnimals.jpg");
+  background-size: cover;
+  margin: 0;
+ position: relative;
+ width: 100%;
+ opacity: 1;
+ background-position: center;
+ background-attachment: fixed;
+ height: 50vh;
+ width: 97vw;
+}
+.graphCaption {
+  position: relative;
+  top: -90vh;
+  float: right;
+  line-height: 8vh;
+}
+
+.allBiome {
+  margin: 2vw;
+  padding: 0;
+  z-index: -1;
+}
+.BiomePictures {
+  position: relative;
+  top:0;
+  left: 15vw;
+}
+.BiomeGallery {
+  position: relative;
+  top: -43.5vw;
+  left: 45vw;
+  cursor: pointer;
+}
+
+.image11 {
+  height: 15vw;
+  object-fit: none;
+  width: 15vw;
+  margin:0;
+  padding: 0;
+  float: left;
+}
+
+.image12 {
+  height: 15vw;
+  object-fit: none;
+  width: 30vw;
+  margin: 0;
+  padding: 0;
+  float: left
+}
+.image21 {
+  height: 30vw;
+  object-fit: none;
+  width: 15vw;
+  margin: 0;
+  float: left;
+  padding: 0;
+}
+.image22 {
+  height: 30vw;
+  object-fit: none;
+  width: 30vw;
+  margin: 0;
+  float: left;
+  padding: 0;
+}
+.BiomeTitle {
+  position: relative;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  font-size: 2.5vw;
+  vertical-align: middle;
+  color:black;
+  text-align: center;
+}
+
+/* Marine */
+#Marine {
+  position: relative;
+  top: 0;
+  left: 0vw;
+  transition: transform 0.5s;
+}
+#BiomeMarine {
+  position: relative;
+  height: 15vw;
+  width: 30vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -15vw;
+  left: 0vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#MarineText {
+  position: relative;
+  top: 3vw;
+}
+#Marine:hover {
+  transform: scale(1.2);
+  z-index: 3;
+  opacity: 0.3;
+}
+#Marine:hover~#BiomeMarine {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Taiga */
+#Taiga {
+  position: relative;
+  top: -30vw;
+  object-position: 60% 45%;
+  left: 30vw;
+  transition: transform 0.5s;
+}
+#BiomeTaiga {
+  position: relative;
+  height: 15vw;
+  width: 30vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -35.7vw;
+  left: 0vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#TaigaText {
+  position: relative;
+  top: 3vw;
+}
+#Taiga:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 0.3;
+}
+#Taiga:hover~#BiomeTaiga {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Desert */
+#Desert {
+  position: relative;
+  top: -20.7vw;
+  transition: transform 0.5s;
+  left: -60vw;
+  z-index: 1;
+}
+#BiomeDesert {
+  position: relative;
+  height: 15vw;
+  width: 15vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -20.7vw;
+  left: -75vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#DesertText {
+  position: relative;
+  font-size: 1.7vw;
+  top: 5vw;
+}
+#Desert:hover {
+  transform: scale(1.2);
+  z-index: 2;
+    opacity: 0.3;
+}
+#Desert:hover~#BiomeDesert {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Tundra */
+#Tundra {
+  position: relative;
+  transition: transform 0.5s;
+  top: -35.7vw;
+  left: 15vw;
+}
+#BiomeTundra {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -35.7vw;
+  left: -15vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#TundraText {
+  position: relative;
+  font-size: 4vw;
+  top: 9vw;
+}
+#Tundra:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 0.3;
+}
+#Tundra:hover~#BiomeTundra {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Tropical Rainforest */
+#TropicalRainforest {
+  transition: transform 0.5s;
+  object-position: 80% 0;
+  position: relative;
+  top: -35.7vw;
+  left: -15vw;
+  cursor:pointer;
+}
+#BiomeTropicalRainforest {
+  position: relative;
+  height: 30vw;
+  width: 15vw;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -35.7vw;
+  left: -30vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#TropicalRainforestText {
+  position: relative;
+  font-size: 1.6vw;
+  top: 10vw;
+  text-align: center;
+}
+#TropicalRainforest:hover {
+  transform: scale(1.2);
+  z-index:2;
+  opacity: 0.3;
+}
+#TropicalRainforest:hover~#BiomeTropicalRainforest {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Temperate Forest */
+#TemperateForest {
+  transition: transform 0.5s;
+  object-position: 40% 0;
+  position: relative;
+  top: -50.7vw;
+  left: 0vw;
+}
+#BiomeTemperateForest {
+  position: relative;
+  height: 30vw;
+  width: 15vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -50.7vw;
+  left: -15vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#TemperateForestText {
+  position: relative;
+  font-size: 1.9vw;
+  top: 10vw;
+  text-align: center;
+}
+#TemperateForest:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 0.3;
+}
+#TemperateForest:hover~#BiomeTemperateForest {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+
+/* Savanna */
+#Savanna {
+  object-position: 40% 80%;
+  transition: transform 0.5s;
+  position: relative;
+  top: -35.7vw;
+  left: 0vw;
+}
+#BiomeSavanna {
+  position: relative;
+  height: 15vw;
+  width: 30vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -35.7vw;
+  left: -30vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#SavannaText {
+  position: relative;
+  font-size: 2vw;
+  top: 4vw;
+  text-align: center;
+}
+#Savanna:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 0.3;
+}
+#Savanna:hover~#BiomeSavanna {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Grassland */
+#Grassland {
+  transition: transform 0.5s;
+  object-position: 30% 40%;
+  position: relative;
+  top:  -50.7vw;
+  left: -15vw;
+}
+#BiomeGrassland {
+  position: relative;
+  height: 15vw;
+  width: 15vw;
+  background-color: white;
+  transition: transform 0.5s;
+  top: -50.7vw;
+  left: -30vw;
+  float: left;
+  opacity: 1;
+  z-index: -2;
+}
+#GrasslandText {
+  position: relative;
+  font-size: 1.7vw;
+  top: 4vw;
+  text-align: center;
+}
+#Grassland:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  opacity: 0.3
+}
+#Grassland:hover~#BiomeGrassland {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+}
+
+
+footer {
+  position: relative;
+  top: 150vh;
+  float: bottom;
+  height: 10vh;
+}

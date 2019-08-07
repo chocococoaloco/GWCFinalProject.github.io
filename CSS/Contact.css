@@ -1,0 +1,36 @@
+#zipsubmit {
+  border: none;
+  color: red;
+}
+#repStats {
+  line-height: 0.9vh;
+  font-size: 1.2vw;
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+}
+#mission_image {
+  background: url("../Images/Contact.jpg");
+  background-size: cover;
+  margin: 0;
+ position: relative;
+ width: 100%;
+ opacity: 1;
+ background-attachment: fixed;
+ height: 50vh;
+ width: 97vw;
+}
+#mission {
+  color: black;
+}
+.ContactYourRepresentative {
+  z-index: 10;
+  padding-left: 4vw;
+}
+.bodyInfo {
+  z-index: 4;
+}
+.extraLinks {
+  font-family: Merriweather, "Times New Roman", Times, Serif;
+  font-size: 1.6vw;
+  margin-left: 4vw;
+
+}
